@@ -1,7 +1,5 @@
 # 📘 Teste Prático - EAD Unifor
 
-Repositório com os arquivos front-end do Tutorial de Algoritmos do EAD Unifor.
-
 ## 🚀 Como rodar com Live Server 
 
 1. **Pré-requisitos**  
@@ -27,3 +25,4 @@ ou clique em "Go Live" no canto inferior direito
    http://127.0.0.1:5500/tutorial_algoritmos.html
     
    As alterações no código serão atualizadas automaticamente (hot reload).
+
