@@ -442,6 +442,7 @@ iframe {
 
 .conceitos__header {
     margin-bottom: var(--space-100);
+    padding: 0 var(--space-100);
 }
 
 .conceitos .text-header {
@@ -1678,7 +1679,7 @@ iframe {
 }
 
 .encerramento__button--next:hover {
-    background-color: #003ccc; /* Tom mais escuro no hover */
+    background-color: #003ccc; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -1762,6 +1763,21 @@ iframe {
     
     .carrossel-material__content {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .conceitos__container {
+        width: 100%;
+    }
+    
+    .conceitos__header,
+    .conceitos__content {
+        padding: 0 var(--space-150); 
+    }
+    
+    .conceitos__text {
+        font-size: var(--font-size-base); 
     }
 }
 
