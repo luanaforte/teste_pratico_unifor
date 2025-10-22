@@ -14,6 +14,8 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <script defer src="script.js"></script>
+
 </head>
 <body>
     <header class="header" role="banner">
@@ -331,21 +333,13 @@
                         equipe.
                     </p>
 
-                    <!-- Carrossel com os 6 slides conforme solicitado -->
                     <div id="fluxogramasCarousel" class="carousel slide fluxogramas__carousel" data-bs-ride="carousel">
-                        <!-- Indicadores -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#fluxogramasCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#fluxogramasCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#fluxogramasCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#fluxogramasCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#fluxogramasCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                            <button type="button" data-bs-target="#fluxogramasCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                        </div>
                         
-                        <!-- Slides -->
                         <div class="carousel-inner">
-                            <!-- Slide 1 -->
+                            <div class="primary-navigation">
+                                <button><img src="assets/button-direction.svg" alt="seta para a esquerda"></button>
+                                <button><img src="assets/button-direction (1).svg" alt="seta para a direita"></button>
+                            </div>
                             <div class="carousel-item active">
                                 <div class="carousel-slide carousel-slide--purple">
                                     <h4 class="carousel-slide__title">Ambiente computacional para o desenvolvimento de algoritmos</h4>
@@ -355,7 +349,6 @@
                                 </div>
                             </div>
                             
-                            <!-- Slide 2 -->
                             <div class="carousel-item">
                                 <div class="carousel-slide carousel-slide--turquoise">
                                     <h4 class="carousel-slide__title">Ambientes de Desenvolvimento Integrado (IDEs)</h4>
@@ -366,7 +359,6 @@
                                 </div>
                             </div>
                             
-                            <!-- Slide 3 -->
                             <div class="carousel-item">
                                 <div class="carousel-slide carousel-slide--red">
                                     <h4 class="carousel-slide__title">Linguagens de Programação</h4>
@@ -378,7 +370,6 @@
                                 </div>
                             </div>
                             
-                            <!-- Slide 4 -->
                             <div class="carousel-item">
                                 <div class="carousel-slide carousel-slide--purple">
                                     <h4 class="carousel-slide__title">Variáveis e Expressões</h4>
@@ -389,7 +380,6 @@
                                 </div>
                             </div>
                             
-                            <!-- Slide 5 -->
                             <div class="carousel-item">
                                 <div class="carousel-slide carousel-slide--turquoise">
                                     <h4 class="carousel-slide__title">Tipos de Variáveis</h4>
@@ -402,7 +392,6 @@
                                 </div>
                             </div>
                             
-                            <!-- Slide 6 -->
                             <div class="carousel-item">
                                 <div class="carousel-slide carousel-slide--red">
                                     <h4 class="carousel-slide__title">Expressões</h4>
@@ -413,13 +402,6 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        <button class="carousel-control-prev fluxogramas__nav-button fluxogramas__nav-button--prev" type="button" data-bs-target="#fluxogramasCarousel" data-bs-slide="prev" aria-label="Slide anterior">
-                            <img class="fluxogramas__nav-icon" src="assets/icon-arrow-left0.svg" alt="" aria-hidden="true">
-                        </button>
-                        <button class="carousel-control-next fluxogramas__nav-button fluxogramas__nav-button--next" type="button" data-bs-target="#fluxogramasCarousel" data-bs-slide="next" aria-label="Próximo slide">
-                            <img class="fluxogramas__nav-icon" src="assets/icon-arrow-right0.svg" alt="" aria-hidden="true">
-                        </button>
                     </div>
                 </div>
             </div>
@@ -692,7 +674,6 @@
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

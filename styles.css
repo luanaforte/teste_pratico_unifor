@@ -868,6 +868,40 @@ iframe {
     overflow: hidden;
 }
 
+.primary-navigation {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+}
+
+.primary-navigation button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-neutral-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.primary-navigation button:hover {
+    background-color: var(--color-neutral-100);
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    padding-top: 50px; 
+}
+
 .carousel-slide {
     padding: var(--space-100);
     border-radius: var(--radius-075);
@@ -900,56 +934,9 @@ iframe {
     line-height: var(--line-height-loose);
 }
 
-#fluxogramasCarousel .carousel-control-prev,
-#fluxogramasCarousel .carousel-control-next {
-    width: 40px;
-    height: 40px;
-    border-radius: var(--radius-full);
-    background-color: var(--color-neutral-100);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 1;
-}
-
-#fluxogramasCarousel .carousel-control-prev {
-    left: 10px;
-}
-
-#fluxogramasCarousel .carousel-control-next {
-    right: 10px;
-}
-
-#fluxogramasCarousel .carousel-control-prev:hover,
-#fluxogramasCarousel .carousel-control-next:hover {
-    background-color: var(--color-neutral-600);
-}
-
-#fluxogramasCarousel .carousel-control-prev:hover .fluxogramas__nav-icon,
-#fluxogramasCarousel .carousel-control-next:hover .fluxogramas__nav-icon {
-    filter: brightness(0) invert(1);
-}
-
-#fluxogramasCarousel .carousel-indicators {
-    bottom: 0;
-    margin-bottom: var(--space-050);
-}
-
-#fluxogramasCarousel .carousel-indicators button {
-    width: 10px;
-    height: 10px;
-    border-radius: var(--radius-full);
-    background-color: var(--color-neutral-300);
-    margin: 0 var(--space-025);
-    border: none;
-    opacity: 0.7;
-}
-
-#fluxogramasCarousel .carousel-indicators button.active {
-    background-color: var(--color-brand-unifor-anil);
-    opacity: 1;
+.carousel-control-prev,
+.carousel-control-next {
+    display: none;
 }
 
 .carousel-slide__text ul {
@@ -964,10 +951,6 @@ iframe {
     display: inline-block;
     width: 1em;
     margin-left: -1em;
-}
-
-.carousel-inner {
-    min-height: 200px;
 }
 
 .carousel-item {
