@@ -300,6 +300,7 @@ iframe {
     letter-spacing: -0.02em;
     transition: color 0.2s;
     padding: var(--space-025) 0;
+    text-decoration: none;
 }
 
 .page-header__menu-link:hover,
@@ -1582,6 +1583,108 @@ iframe {
 .carrossel-material__content {
     -ms-overflow-style: none;  
     scrollbar-width: none;  
+}
+
+.encerramento {
+    margin: var(--space-200) 0;
+}
+
+.encerramento__container {
+    width: 95%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.encerramento__text {
+    color: var(--color-neutral-950);
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-loose);
+    margin-bottom: var(--space-150);
+    text-align: center; /* Texto centralizado conforme design original */
+    font-family: 'Poppins', sans-serif;
+}
+
+.encerramento__banner {
+    background-color: #E6F4FF; /* Azul bem claro para o banner */
+    border-radius: var(--radius-075);
+    padding: var(--space-150);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-150);
+    border: 1px solid #C7E2FF; /* Borda sutil */
+}
+
+.encerramento__message {
+    text-align: center; /* Texto centralizado */
+}
+
+.encerramento__title {
+    color: var(--color-brand-unifor-anil);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-medium);
+    margin: 0 0 var(--space-050);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.encerramento__description {
+    color: var(--color-neutral-950);
+    font-size: var(--font-size-md);
+    margin: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.encerramento__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-100);
+    width: 100%;
+    max-width: 600px; /* Limita a largura dos botões */
+}
+
+.encerramento__button {
+    display: flex;
+    align-items: center;
+    gap: var(--space-050);
+    padding: var(--space-075) var(--space-150);
+    border-radius: var(--radius-full);
+    text-decoration: none;
+    font-size: var(--font-size-md);
+    transition: all 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: var(--font-weight-medium);
+    min-width: 200px;
+    justify-content: center;
+}
+
+.encerramento__button--back {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-neutral-300);
+    color: var(--color-neutral-950);
+}
+
+.encerramento__button--back:hover {
+    background-color: var(--color-neutral-100);
+    border-color: var(--color-neutral-400);
+}
+
+.encerramento__button--next {
+    background-color: var(--color-brand-unifor-anil);
+    border: none;
+    color: var(--color-white);
+}
+
+.encerramento__button--next:hover {
+    background-color: #003ccc; /* Tom mais escuro no hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.encerramento__button-icon {
+    width: 16px;
+    height: 16px;
 }
 
 .footer {
