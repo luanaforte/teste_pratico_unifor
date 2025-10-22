@@ -1202,7 +1202,7 @@ iframe {
 .material-leitura .text-header .content {
     color: var(--color-neutral-950);
     padding: 0; 
-    
+    font-family: poppins, sans-serif;
 }
 
 .material-leitura__icon-container {
@@ -1224,14 +1224,13 @@ iframe {
 .material-leitura__link {
     text-decoration: none; 
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     border: 1px solid var(--color-brand-unifor-anil);
     border-radius: var(--radius-050); 
     padding: var(--space-075) var(--space-100);
     background-color: var(--color-white);
-    transition: background-color 0.2s;
 }
 
 .material-leitura__link:hover {
@@ -1241,12 +1240,12 @@ iframe {
 .material-leitura__link-content {
     display: flex;
     align-items: center;
-    gap: var(--space-050);
+    gap: var(--space-075);
 }
 
 .material-leitura__link-icon {
-    width: var(--icon-size-md);
-    height: var(--icon-size-md);
+    width: var(--icon-size-lg);
+    height: var(--icon-size-lg);
 }
 
 .material-leitura__link-text {
@@ -1313,7 +1312,7 @@ iframe {
 .exercicios__button {
     display: inline-flex;
     align-items: center;
-    gap: var(--space-050);
+    gap: var(--space-075);
     padding: var(--space-050) var(--space-075);
     background-color: var(--color-blue-100);
     border: 1px solid var(--color-brand-unifor-anil);
@@ -1329,14 +1328,15 @@ iframe {
 
 .exercicios__button-text {
     color: var(--color-brand-unifor-anil);
-    font-size: var(--font-size-md);
-    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-sm);
     font-family: 'Poppins', sans-serif;
 }
 
-.exercicios__button-icon {
-    width: 16px;
-    height: 16px;
+.exercicios__button-icon,
+.material-leitura__link-arrow-icon {
+    width: 10px;
+    height: 14px;
+    object-fit: contain;
 }
 
 .resumo {
@@ -1764,25 +1764,66 @@ iframe {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 992px) {
+    .material-leitura,
+    .exercicios {
+        margin: var(--space-150) 0;
+    }
+    
     .text-header .content {
-        font-size: 20px;
+        font-size: var(--font-size-md);
+    }
+}
+
+@media (max-width: 768px) {
+    .material-leitura__link,
+    .exercicios__button {
+        padding: var(--space-075) var(--space-100);
+        width: 100%;
+        justify-content: space-between;
     }
     
-    .percurso__subtitle {
+    .material-leitura__link-text,
+    .exercicios__button-text {
         font-size: var(--font-size-base);
     }
     
-    .material-leitura__link {
-        flex-direction: column;
+    .exercicios__card {
+        padding: var(--space-100);
+    }
+}
+
+@media (max-width: 576px) {
+    .material-leitura__icon,
+    .exercicios__icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .text-header .content {
+        font-size: var(--font-size-base);
+    }
+    
+    .material-leitura__text,
+    .exercicios__description p {
+        font-size: var(--font-size-sm);
+        margin-bottom: var(--space-100);
+    }
+    
+    .exercicios__button-icon,
+    .material-leitura__link-arrow-icon {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@media (max-width: 360px) {
+    .material-leitura__link-text,
+    .exercicios__button-text {
+        font-size: var(--font-size-sm);
+    }
+    
+    .text-header {
         gap: var(--space-050);
-    }
-    
-    .info-card__title {
-        font-size: var(--font-size-base);
-    }
-    
-    .info-card__description {
-        font-size: var(--font-size-base);
     }
 }
