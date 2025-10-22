@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tutorial de algoritmos - Conceitos e representação simbólica">
+
+    <title>EAD Unifor - Tutorial de Algoritmos</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header" role="banner">
+        <div class="header__container">
+            <div class="header__left-section">
+                <a href="#" class="header__logo-link" aria-label="Página inicial do EAD Unifor">
+                    <img src="assets/logo-unifor.svg" alt="Logo Unifor" class="header__logo">
+                </a>
+
+                <nav class="header__nav" aria-label="Navegação principal">
+                    <ul class="header__breadcrumb">
+                        <li class="header__breadcrumb-item">
+                            <a href="#" class="header__breadcrumb-link">EAD Unifor</a>
+                        </li>
+                        <li class="header__breadcrumb-item">
+                            <a href="#" class="header__breadcrumb-link">Minhas Disciplinas</a>
+                        </li>
+                        <li class="header__breadcrumb-item">
+                            <a href="#" class="header__breadcrumb-link">Biblioteca</a>
+                        </li>
+                        <li class="header__breadcrumb-item">
+                            <a href="#" class="header__breadcrumb-link">Tutorial</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="header__user-section">
+                <span class="header__user-name" id="user-name">Estudante</span>
+                <div class="header__avatar" aria-label="Avatar do usuário">
+                    <div class="header__avatar-background"></div>
+                    <span class="header__avatar-initial" aria-hidden="true">E</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="page-header">
+            <div class="page-header__container">
+                <h1 class="page-header__title">Nome da Disciplina</h1>
+                
+                <nav class="page-header__nav" aria-label="Navegação da disciplina">
+                    <ul class="page-header__menu">
+                        <li class="page-header__menu-item">
+                            <a href="#" class="page-header__menu-link">Disciplina</a>
+                        </li>
+                        <li class="page-header__menu-item">
+                            <a href="#" class="page-header__menu-link page-header__menu-link--active">Participantes</a>
+                        </li>
+                        <li class="page-header__menu-item">
+                            <a href="#" class="page-header__menu-link page-header__menu-link--active">Notas</a>
+                        </li>
+                        <li class="page-header__menu-item">
+                            <a href="#" class="page-header__menu-link page-header__menu-link--active">Banco de questões</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <hr class="divider" aria-hidden="true">
+
+        <section class="percurso" id="percurso-1">
+            <div class="percurso__container">
+                <header class="percurso__header">
+                    <div class="percurso__tag" aria-label="Identificador do percurso">Percurso 1</div>
+                    
+                    <div class="text-header">
+                        <div class="content" role="heading" aria-level="2">Utilização de algoritmos na resolução <br> de problemas</div>
+                    </div>
+                    <p class="percurso__subtitle">Conceitos e representação simbólica de algoritmos</p>
+                </header>
+
+                <figure class="percurso__figure">
+                    <img 
+                        src="images/017-TW1-01 1.png" 
+                        alt="Ilustração de homem programando com telas de código JavaScript em evidência ao fundo" 
+                        class="percurso__image">
+                </figure>
+            </div>
+        </section>
+
+        <section class="objetivos" id="objetivos-aprendizagem">
+            <div class="objetivos__container">
+                <header class="objetivos__header">
+                    <div class="objetivos__icon-container" aria-hidden="true">
+                        <img src="assets/icon.svg" alt="" class="objetivos__icon">
+                    </div>
+                    <div class="text-header">
+                        <div class="content" role="heading" aria-level="2"><h3>Objetivos de Aprendizagem</h3></div>
+                    </div>
+                </header>
+
+                <div class="objetivos__description">
+                    <p class="objetivos__text">
+                        Neste Percurso, vamos explorar como os algoritmos serão utilizados para
+                        <strong>resolver problemas</strong>, destacando seu papel essencial no mundo moderno,
+                        caracterizando a importância dos algoritmos.
+                    </p>
+                    <p class="objetivos__text">
+                        Iremos <strong>desenvolver programas</strong> utilizando elementos fundamentais das
+                        <strong>linguagens de programação</strong> e valorizar os algoritmos como ferramentas
+                        indispensáveis para a solução de problemas.
+                    </p>
+                    <p class="objetivos__text">
+                        Abordaremos tópicos como o <strong>conceito e a representação simbólica</strong>
+                        de algoritmos, o ambiente computacional necessário para seu desenvolvimento, além de
+                        <strong>variáveis, expressões, entrada e saída de dados</strong>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="conceitos" id="conceitos-algoritmos">
+            <div class="conceitos__container">
+                <header class="conceitos__header">
+                    <div class="text-header">
+                        <div class="content" role="heading" aria-level="2">Conceitos e representação simbólica de algoritmos</div>
+                    </div>
+                </header>
+                <div class="conceitos__content">
+                    <p class="conceitos__text">
+                        Um algoritmo pode ser definido como uma sequência finita de instruções ou
+                        passos que, quando seguidos, resolvem um problema específico ou realizam uma
+                        tarefa particular. Os algoritmos são fundamentais em diversas áreas, desde a
+                        ciência da computação até a matemática e a engenharia. Eles são usados para
+                        automatizar processos, realizar cálculos, processar dados e resolver problemas
+                        complexos de maneira eficiente.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <aside class="alerta" aria-labelledby="alerta-titulo">
+            <div class="alerta__container">
+                <div class="alerta__icon-container" aria-hidden="true">
+                    <img class="alerta__icon" src="assets/Icon (1).svg" alt="">
+                </div>
+                <div class="alerta__content">
+                    <h3 id="alerta-titulo" class="alerta__title">Importante</h3>
+                    <p class="alerta__text">
+                        A importância dos algoritmos na resolução de problemas no mundo moderno
+                        não pode ser subestimada. Eles são a base para o desenvolvimento de
+                        software e sistemas computacionais que permeiam praticamente todos os
+                        aspectos da vida cotidiana, desde aplicativos de smartphone até sistemas
+                        de controle de tráfego aéreo.
+                    </p>
+                </div>
+            </div>
+        </aside>
+
+        <section class="video-aulas" id="videoaulas">
+            <div class="video-aulas__container">
+                <p class="video-aulas__title">Quer entender melhor esse assunto? Assista ao vídeo a seguir</p>
+                
+                <div class="video-aulas__slider">
+                    <article class="video-card">
+                        <div class="video-card__container">
+                            <div class="video-card__media">
+                                <iframe 
+                                    class="video-card__iframe" 
+                                    src="https://www.youtube.com/embed/z1XTcKKRbKM" 
+                                    title="O que é &quot;o tal do Algoritmo&quot;? - Lógica e Programação" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            
+                            <div class="video-card__info">
+                                <h4 class="video-card__title">O que é um algoritmo?</h4>
+                                <div class="video-card__meta">
+                                    <span class="video-card__duration">Videoaula 1 - 8 min</span>
+                                    <a href="#" class="video-card__accessibility-link">
+                                        <img class="video-card__accessibility-icon" src="assets/icon-libras0.svg" alt="Ícone de Libras">
+                                        <span>Acesse em Libras</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="representacao" id="representacao-algoritmos">
+            <div class="representacao__container">
+                <header class="representacao__header">
+                    <div class="text-header">
+                        <div class="content" role="heading" aria-level="2">Representação simbólica de algoritmos</div>
+                    </div>
+                </header>
+                <div class="representacao__content">
+                    <p class="representacao__text">
+                        Um algoritmo pode ser definido como uma sequência finita de instruções ou
+                        passos que, quando seguidos, resolvem um problema específico ou realizam uma
+                        tarefa particular. Os algoritmos são fundamentais em diversas áreas, desde a
+                        ciência da computação até a matemática e a engenharia. Eles são usados para
+                        automatizar processos, realizar cálculos, processar dados e resolver problemas
+                        complexos de maneira eficiente.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="pseudocodigo" id="pseudocodigo">
+            <div class="pseudocodigo__container">
+                <header class="pseudocodigo__header">
+                    <div class="text-header">
+                        <div class="content" role="heading" aria-level="2">Pseudocódigo</div>
+                    </div>
+                </header>
+                <div class="pseudocodigo__content">
+                    <p class="pseudocodigo__text">
+                        O pseudocódigo é uma forma textual de descrever algoritmos usando uma
+                        linguagem estruturada, mas informal. Ele não segue a sintaxe rígida de uma
+                        linguagem de programação específica, o que o torna acessível e fácil de
+                        entender. O pseudocódigo permite que os desenvolvedores se concentrem na
+                        lógica do algoritmo sem se preocuparem com detalhes de implementação
+                        específicos de uma linguagem de programação.
+                    </p>
+                    <p class="pseudocodigo__text">
+                        Um exemplo simples de pseudocódigo para encontrar o maior número em uma lista
+                        poderia ser:
+                    </p>
+
+                    <pre class="pseudocodigo__exemplo" aria-label="Exemplo de pseudocódigo para encontrar o maior número em uma lista">
+<code>
+    Algoritmo <b>MaiorNúmero</b>
+    <b>Entrada:</b> lista de números
+    <b>Saída:</b> maior número da lista
+        Maior ← Lista[0]
+        Para cada número em Lista faça
+            Se número > Maior então
+                Maior ← número
+            Retornar Maior
+</code>
+                    </pre>
+
+                    <p class="pseudocodigo__text">
+                        Este pseudocódigo é fácil de seguir e entender, independentemente do
+                        conhecimento prévio de uma linguagem de programação específica.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="fluxogramas" id="fluxogramas">
+            <div class="fluxogramas__container">
+                <header class="fluxogramas__header">
+                    <div class="text-header">
+                        <div class="content" role="heading" aria-level="2">Fluxogramas</div>
+                    </div>
+                </header>
+                
+                <div class="fluxogramas__content">
+                    <p class="fluxogramas__text">
+                        Os fluxogramas são representações gráficas de algoritmos que utilizam símbolos
+                        padronizados para ilustrar o fluxo de controle e os passos do algoritmo. Eles são úteis
+                        para visualizar a lógica e a estrutura de um algoritmo de maneira clara e intuitiva. Os
+                        principais símbolos usados em fluxogramas incluem:
+                    </p>
+                    
+                    <figure class="fluxogramas__figure">
+                        <figcaption class="fluxogramas__caption">Quadro 1 - Funções dos símbolos</figcaption>
+                        <img 
+                            class="fluxogramas__image" 
+                            src="images/_7-d-6-d-4076-6-bdd-4-fbd-a-0-bb-79-e-47-a-0-bfc-70-1.png" 
+                            alt="Tabela com símbolos padrão de fluxogramas e suas funções">
+                        <p class="fluxogramas__source">Fonte: EaD Unifor (2024)</p>
+                    </figure>
+
+                    <p class="fluxogramas__text">
+                        A seguir, um exemplo de fluxograma para o algoritmo para ler e calcular a soma de dois números.
+                    </p>
+
+                    <figure class="fluxogramas__figure">
+                        <figcaption class="fluxogramas__caption">Figura 1 - Soma de dois números com algoritmo</figcaption>
+                        <img 
+                            class="fluxogramas__image" 
+                            src="images/017-ML1-1 1.png" 
+                            alt="Tabela com símbolos padrão de fluxogramas e suas funções">
+                        <p class="fluxogramas__source">Fonte: EaD Unifor (2024)</p>
+                    </figure>
+
+                    <article class="video-card">
+                        <div class="video-card__container">
+                            <div class="fluxogramas__video-container">
+                                <iframe 
+                                    class="fluxogramas__video" 
+                                    src="https://www.youtube.com/embed/vmieTLOKAIc" 
+                                    title="Exemplo com exercício resolvido em pseudocódigo e fluxograma" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+
+                            <div class="video-card__info">
+                                <h3 class="video-card__title">Crie algoritmos desse jeito</h3>
+                                <div class="video-card__meta">
+                                    <span class="video-card__duration">Videoaula 2 - 8 min</span>
+                                    <a href="#" class="video-card__accessibility-link">
+                                        <img class="video-card__accessibility-icon" src="assets/icon-libras0.svg" alt="Ícone de Libras">
+                                        <span>Acesse em Libras</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <p class="fluxogramas__text">
+                        Os fluxogramas facilitam a visualização do processo algorítmico e são
+                        especialmente úteis na fase de planejamento e discussão de algoritmos em
+                        equipe.
+                    </p>
+
+                    <!-- Carrossel com os 6 slides conforme solicitado -->
+                    <div id="fluxogramasCarousel" class="carousel slide fluxogramas__carousel" data-bs-ride="carousel">
+                        <!-- Indicadores -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#fluxogramasCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#fluxogramasCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#fluxogramasCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#fluxogramasCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#fluxogramasCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button type="button" data-bs-target="#fluxogramasCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        </div>
+                        
+                        <!-- Slides -->
+                        <div class="carousel-inner">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active">
+                                <div class="carousel-slide carousel-slide--purple">
+                                    <h4 class="carousel-slide__title">Ambiente computacional para o desenvolvimento de algoritmos</h4>
+                                    <p class="carousel-slide__text">Desenvolver algoritmos não é uma tarefa isolada, ela ocorre em um ambiente
+                                    computacional que inclui ferramentas e recursos específicos. Esses ambientes fornecem
+                                    suporte para a codificação, teste e depuração de algoritmos.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 2 -->
+                            <div class="carousel-item">
+                                <div class="carousel-slide carousel-slide--turquoise">
+                                    <h4 class="carousel-slide__title">Ambientes de Desenvolvimento Integrado (IDEs)</h4>
+                                    <p class="carousel-slide__text">Os IDEs são softwares que oferecem um conjunto completo de ferramentas para o
+                                    desenvolvimento de software. Eles incluem editores de código, compiladores, depuradores
+                                    e outras funcionalidades que facilitam o desenvolvimento de algoritmos. Exemplos
+                                    populares de IDEs incluem Visual Studio, Eclipse e PyCharm.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 3 -->
+                            <div class="carousel-item">
+                                <div class="carousel-slide carousel-slide--red">
+                                    <h4 class="carousel-slide__title">Linguagens de Programação</h4>
+                                    <p class="carousel-slide__text">Embora o pseudocódigo e os fluxogramas sejam úteis para planejar algoritmos,
+                                    eventualmente, eles precisam ser traduzidos para uma linguagem de programação para
+                                    serem executados por um computador. As linguagens de programação fornecem a sintaxe
+                                    e as estruturas necessárias para implementar algoritmos. Algumas das linguagens de
+                                    programação mais comuns incluem Python, Java, C++ e JavaScript.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 4 -->
+                            <div class="carousel-item">
+                                <div class="carousel-slide carousel-slide--purple">
+                                    <h4 class="carousel-slide__title">Variáveis e Expressões</h4>
+                                    <p class="carousel-slide__text">As variáveis são elementos fundamentais na programação e no desenvolvimento
+                                    de algoritmos. Elas são usadas para armazenar dados temporários que podem ser
+                                    manipulados durante a execução de um algoritmo. As variáveis são nomeadas para que
+                                    possam ser referenciadas e atualizadas conforme necessário.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 5 -->
+                            <div class="carousel-item">
+                                <div class="carousel-slide carousel-slide--turquoise">
+                                    <h4 class="carousel-slide__title">Tipos de Variáveis</h4>
+                                    <p class="carousel-slide__text">Existem vários tipos de variáveis, incluindo:
+                                    <br>• Inteiros: Números inteiros.
+                                    <br>• Ponto flutuante: números decimais.
+                                    <br>• Caractere: um único caractere.
+                                    <br>• String: uma sequência de caracteres.
+                                    <br>• Booleano: verdadeiro ou falso.</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Slide 6 -->
+                            <div class="carousel-item">
+                                <div class="carousel-slide carousel-slide--red">
+                                    <h4 class="carousel-slide__title">Expressões</h4>
+                                    <p class="carousel-slide__text">As expressões são combinações de variáveis, constantes e operadores que são avaliadas
+                                    para produzir um valor. Elas são usadas para realizar cálculos e tomar decisões dentro de
+                                    um algoritmo. Por exemplo, a expressão 'a + b * c' calcula a soma de 'a' com o produto
+                                    de 'b' e 'c'.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="carousel-control-prev fluxogramas__nav-button fluxogramas__nav-button--prev" type="button" data-bs-target="#fluxogramasCarousel" data-bs-slide="prev" aria-label="Slide anterior">
+                            <img class="fluxogramas__nav-icon" src="assets/icon-arrow-left0.svg" alt="" aria-hidden="true">
+                        </button>
+                        <button class="carousel-control-next fluxogramas__nav-button fluxogramas__nav-button--next" type="button" data-bs-target="#fluxogramasCarousel" data-bs-slide="next" aria-label="Próximo slide">
+                            <img class="fluxogramas__nav-icon" src="assets/icon-arrow-right0.svg" alt="" aria-hidden="true">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="entrada-saida" id="entrada-saida">
+            <div class="entrada-saida__container">
+                <header class="entrada-saida__header">
+                    <div class="text-header">
+                        <div class="content" role="heading" aria-level="2">Entrada e Saída de Dados</div>
+                    </div>
+                </header>
+                <div class="entrada-saida__content">
+                    <p class="entrada-saida__text">
+                        A entrada e saída de dados são componentes essenciais de qualquer algoritmo
+                        que interaja com o usuário ou outros sistemas. A entrada de dados envolve a
+                        obtenção de dados externos que o algoritmo usará, enquanto a saída de dados
+                        envolve a apresentação dos resultados do algoritmo.
+                    </p>
+                    
+                    <figure class="entrada-saida__figure">
+                        <figcaption class="entrada-saida__caption">Figura 2 – Dispositivos de entrada (input) e saída (output) de dados</figcaption>
+                        <img class="entrada-saida__image" src="images/017-ML1-2 1.png" alt="Representação de dispositivos de entrada e saída de dados">
+                        <p class="entrada-saida__source">Fonte: EaD Unifor (2024)</p>
+                    </figure>
+                </div>
+
+                <div class="entrada-saida__metodos">
+                    <div class="metodos-entrada">
+                        <div class="text-header">
+                            <div class="content" role="heading" aria-level="3">Métodos de Entrada</div>
+                        </div>
+                        <div class="metodos-entrada__content">
+                            <p class="metodos-entrada__text">
+                                Os dados podem ser inseridos em um algoritmo de várias maneiras,
+                                incluindo:
+                            </p>
+                            <ul class="metodos-entrada__list">
+                                <li><strong>Entrada do usuário:</strong> solicitar que o usuário digite dados via teclado.</li>
+                                <li><strong>Arquivos:</strong> ler dados de arquivos armazenados no sistema de arquivos.</li>
+                                <li><strong>Sensores:</strong> receber dados de sensores em sistemas embarcados.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="metodos-saida">
+                        <div class="text-header">
+                            <div class="content" role="heading" aria-level="3">Métodos de Saída</div>
+                        </div>
+                        <div class="metodos-saida__content">
+                            <p class="metodos-saida__text">
+                                Os resultados de um algoritmo podem ser apresentados de várias formas,
+                                como:
+                            </p>
+                            <ul class="metodos-saida__list">
+                                <li><strong>Tela:</strong> exibir resultados no monitor.</li>
+                                <li><strong>Arquivos:</strong> gravar resultados em arquivos para posterior análise.</li>
+                                <li><strong>Atuadores:</strong> enviar comandos para dispositivos físicos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="material-complementar" id="material-complementar">
+            <div class="material-complementar__container">
+                <div class="material-leitura">
+                    <header class="material-leitura__header">
+                        <div class="text-header">
+                            <img src="assets/icon-file-pdf.svg" alt="ícone de pdf" class="material-leitura__icon">
+                            <div class="content" role="heading" aria-level="2">Material de leitura</div>
+                        </div>
+                    </header>
+                    
+                    <p class="material-leitura__text">Para ampliar seus conhecimentos, que tal agora ler o material de leitura? Outras informações importantes sobre o percurso estão disponíveis neste arquivo.</p>
+                    
+                    <a href="#" class="material-leitura__link" aria-label="Baixar material de leitura em PDF">
+                        <div class="material-leitura__link-content">
+                            <div class="material-leitura__link-icon">
+                                <img class="material-leitura__link-icon-img" src="icon-file-pdf0.svg" alt="">
+                            </div>
+                            <span class="material-leitura__link-text">Acesse o material de leitura</span>
+                        </div>
+                        <div class="material-leitura__link-arrow">
+                            <img class="material-leitura__link-arrow-icon" src="assets/Vector (2).svg" alt="seta diagonal para a direita">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="exercicios">
+                    <div class="exercicios__card">
+                        <header class="exercicios__header">
+                            <div class="text-header">
+                                <img class="exercicios__icon" src="assets/icon-note.svg" alt="bloco de notas">
+                                <div class="content" role="heading" aria-level="2">Exercícios</div>
+                            </div>
+                        </header>
+                        
+                        <div class="exercicios__description">
+                            <p>É hora de testar tudo que você aprendeu até aqui. Vamos lá?</p>
+                            <a href="#" class="exercicios__button" aria-label="Acessar exercícios">
+                                <span class="exercicios__button-text">Acessar</span>
+                                <img class="exercicios__button-icon" src="assets/Vector (2).svg" alt="seta diagonal para a direita">
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="resumo" id="resumo">
+            <div class="resumo__container">
+                <header class="resumo__header">
+                    <div class="text-header">
+                        <img src="assets/icon (3).svg" alt="círculos interligados representando conexões">
+                        <div class="content" role="heading" aria-level="2">Resumo do percurso</div>
+                    </div>
+                </header>
+
+                <div class="resumo__accordions">
+                    
+                    <details class="accordion" open>
+                        <summary class="accordion__header">
+                            <span class="accordion__title">Objetivos</span>
+                            <img class="accordion__icon" src="icon-minus0.svg" alt="">
+                        </summary>
+                        <div class="accordion__content">
+                            <ul class="accordion__list">
+                                <li>Caracterizar o papel dos algoritmos no processo de resolução de problemas do mundo moderno.</li>
+                                <li>Desenvolver programas com elementos fundamentais de linguagens de programação.</li>
+                                <li>Valorar o algoritmo como um solucionador de problemas.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="accordion" open>
+                        <summary class="accordion__header">
+                            <span class="accordion__title">Conceitos</span>
+                            <img class="accordion__icon" src="icon-minus0.svg" alt="">
+                        </summary>
+                        <div class="accordion__content">
+                            <p>Algoritmos e Linguagem de programação</p>
+                        </div>
+                    </details>
+
+                    <details class="accordion" open>
+                        <summary class="accordion__header">
+                            <span class="accordion__title">Exemplos</span>
+                            <img class="accordion__icon" src="icon-minus0.svg" alt="">
+                        </summary>
+                        <div class="accordion__content">
+                            <p>Linguagens de programação mais comuns incluem Python, Java, C++ e JavaScript</p>
+                        </div>
+                    </details>
+
+                    <details class="accordion" open>
+                        <summary class="accordion__header">
+                            <span class="accordion__title">Encerramento</span>
+                            <img class="accordion__icon" src="icon-minus0.svg" alt="">
+                        </summary>
+                        <div class="accordion__content">
+                            <p>A importância dos algoritmos como solucionadores de problemas e sua aplicação prática em diversas áreas já é uma realidade e deve ser valorizada.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="material-extra" id="material-extra">
+            <div class="material-extra__container">
+                <header class="material-extra__header">
+                    <div class="text-header">
+                        <img src="assets/icon (3).svg" alt="Círculos ligados representando conexões">
+                        <div class="content" role="heading" aria-level="2">Material complementar</div>
+                    </div>
+                </header>
+
+                <p class="material-extra__intro">
+                    Quer aprender mais? Então, vem conferir essa lista de sugestões feita
+                    especialmente para você ampliar seu aprendizado! Ah, os links são externos,
+                    tá!?
+                </p>
+
+                <div class="carrossel-material" aria-label="Carrossel de materiais complementares">
+                 
+                    <div class="carrossel-material__navigation">
+                        <button class="carrossel-material__nav-button carrossel-material__nav-button--prev" aria-label="Material anterior">
+                            <div class="carrossel-material__nav-icon">
+                                <img src="icon-arrow-left0.svg" alt="">
+                            </div>
+                        </button>
+
+                        <button class="carrossel-material__nav-button carrossel-material__nav-button--next" aria-label="Próximo material">
+                            <div class="carrossel-material__nav-icon">
+                                <img src="icon-arrow-right0.svg" alt="">
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="carrossel-material__content">
+  
+                        <article class="material-card">
+                            <div class="material-card__tag">
+                                <img class="material-card__tag-icon" src="assets/Vector (1).svg" alt="ícone de vídeo">
+                                <span class="material-card__tag-text">Vídeo</span>
+                            </div>
+                            <h3 class="material-card__title">Qual é o melhor editor de código?</h3>
+                        </article>
+
+                        <article class="material-card">
+                            <div class="material-card__tag">
+                                <img class="material-card__tag-icon" src="assets/icon-file.svg" alt="Ícone de arquivo">
+                                <span class="material-card__tag-text">Artigo</span>
+                            </div>
+                            <h3 class="material-card__title">Algoritmos: Entrada e Saída de dados</h3>
+                        </article>
+
+                        <article class="material-card">
+                            <div class="material-card__tag">
+                                <img class="material-card__tag-icon" src="assets/icon-file.svg" alt="ícone de arquivo">
+                                <span class="material-card__tag-text">Artigo</span>
+                            </div>
+                            <h3 class="material-card__title">Numerical Algorithms</h3>
+                        </article>
+                    </div>
+
+                    <div class="carrossel-material__indicators">
+                        <button class="carrossel-material__indicator carrossel-material__indicator--active" aria-label="Página 1" data-slide="1"></button>
+                        <button class="carrossel-material__indicator" aria-label="Página 2" data-slide="2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="encerramento" id="encerramento">
+            <div class="encerramento__container">
+                <p class="encerramento__text">
+                    Chegamos ao final do nosso Percurso. Esperamos que você tenha vivenciado uma
+                    ótima experiência!
+                </p>
+
+                <div class="encerramento__banner">
+                    <div class="encerramento__message">
+                        <h2 class="encerramento__title">Oba! 😊</h2>
+                        <p class="encerramento__description">
+                            O Percurso 1 foi finalizado com sucesso! Clique abaixo para avançar para o
+                            Percurso 2.
+                        </p>
+                    </div>
+                    <div class="encerramento__buttons">
+                        <a href="#" class="encerramento__button encerramento__button--back">
+                            <img class="encerramento__button-icon" src="icon-arrow-left0.svg" alt="">
+                            <span class="encerramento__button-text">Voltar a Página Inicial</span>
+                        </a>
+                        <a href="#" class="encerramento__button encerramento__button--next">
+                            <span class="encerramento__button-text">Próximo Percurso</span>
+                            <img class="encerramento__button-icon" src="icon-arrow-right0.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__copyright">&copy; 2024 EAD Unifor. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
