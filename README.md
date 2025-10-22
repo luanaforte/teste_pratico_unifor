@@ -8,7 +8,7 @@
 
 2. **Clone ou baixe o projeto**
    ```bash
-   git clone https://github.com/seu-usuario/tutorial-algoritmos.git
+     git clone https://github.com/seu-usuario/teste_pratico_unifor.git
    ```
 
    Ou baixe o ZIP e extraia para uma pasta.
@@ -26,3 +26,21 @@ ou clique em "Go Live" no canto inferior direito
     
    As alterações no código serão atualizadas automaticamente (hot reload).
 
+## 🛠 Tecnologias
+
+HTML5
+
+CSS3
+
+JavaScript
+
+
+## 📁 Estrutura de arquivos
+```
+.
+├── assets/         # Ícones e imagens de interface
+├── images/         # Imagens de conteúdo
+├── index.html      # HTML principal
+├── styles.css      # Estilos CSS
+└── scripts.js      # Código JavaScript
+```
