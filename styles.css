@@ -194,15 +194,20 @@ iframe {
 .header__breadcrumb {
     display: flex;
     align-items: center;
+    color: var(--color-white);
     gap: var(--space-100);
     margin: 0;
     padding: 0;
 }
 
+.header__breadcrumb-link:visited {
+    color: var(--color-white);
+}
+
 .header__breadcrumb-item {
     color: var(--color-white);
     font-size: var(--font-size-md);
-    font-weight: var(--font-weight-regular);
+    font-weight: 100;
     display: flex;
     align-items: center;
 }
